@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Hex' target in the 'Hex' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
