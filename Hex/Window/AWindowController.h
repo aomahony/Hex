@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AController.h"
 #import "AFile.h"
 #import "AFormatter.h"
+#import "ADragView.h"
 
-@interface AWindowController : NSObject
+@interface AWindowController : AController
 {
     IBOutlet NSTextField* byteSearchField;
     IBOutlet NSTextField* textSearchField;
@@ -22,6 +24,8 @@
     
     IBOutlet NSPopUpButton* displaySizePopupButton;
     IBOutlet NSTextField* displaySizeLabel;
+    
+    IBOutlet ADragView* dragView;
     
     IBOutlet NSScrollView* hexScrollView;
     
@@ -40,6 +44,7 @@
 @property (nonatomic, retain) IBOutlet NSTextField* gotoAddressFieldLabel;
 
 @property (nonatomic, retain) IBOutlet NSScrollView* hexScrollView;
+@property (nonatomic, retain) IBOutlet ADragView* dragView;
 
 @property (nonatomic, retain) IBOutlet NSPopUpButton* displaySizePopupButton;
 @property (nonatomic, retain) IBOutlet NSTextField* displaySizeLabel;

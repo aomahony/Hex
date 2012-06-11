@@ -19,6 +19,7 @@
 @synthesize byteSearchField, textSearchField, gotoAddressField;
 @synthesize byteSearchFieldLabel, textSearchFieldLabel, gotoAddressFieldLabel;
 @synthesize hexScrollView;
+@synthesize dragView;
 
 @synthesize displaySizePopupButton;
 @synthesize displaySizeLabel;
@@ -116,6 +117,7 @@
     
     self.gotoAddressFieldLabel = nil;
     self.hexScrollView = nil;
+    self.dragView = nil;
     
     self.displaySizePopupButton = nil;
     

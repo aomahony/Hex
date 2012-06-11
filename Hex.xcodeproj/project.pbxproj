@@ -20,6 +20,9 @@
 		497F981F158097A500189636 /* RegexKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497F981C158096A000189636 /* RegexKit.framework */; };
 		497F982315818FB700189636 /* AFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F982215818FB700189636 /* AFile.m */; };
 		497F982615847BC200189636 /* AFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F982515847BC100189636 /* AFormatter.m */; };
+		497F98301586813100189636 /* AController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F982F1586813100189636 /* AController.m */; };
+		497F98331586816A00189636 /* AView.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F98321586816A00189636 /* AView.m */; };
+		497F98361586822800189636 /* ADragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F98351586822700189636 /* ADragView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +61,12 @@
 		497F982215818FB700189636 /* AFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFile.m; path = File/AFile.m; sourceTree = "<group>"; };
 		497F982415847BC100189636 /* AFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFormatter.h; path = Formatter/AFormatter.h; sourceTree = "<group>"; };
 		497F982515847BC100189636 /* AFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFormatter.m; path = Formatter/AFormatter.m; sourceTree = "<group>"; };
+		497F982E1586813100189636 /* AController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AController.h; path = Components/AController.h; sourceTree = "<group>"; };
+		497F982F1586813100189636 /* AController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AController.m; path = Components/AController.m; sourceTree = "<group>"; };
+		497F98311586816A00189636 /* AView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AView.h; path = Components/AView.h; sourceTree = "<group>"; };
+		497F98321586816A00189636 /* AView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AView.m; path = Components/AView.m; sourceTree = "<group>"; };
+		497F98341586822700189636 /* ADragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADragView.h; path = Window/ADragView.h; sourceTree = "<group>"; };
+		497F98351586822700189636 /* ADragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADragView.m; path = Window/ADragView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,7 @@
 		497F97FD1580752800189636 /* Hex */ = {
 			isa = PBXGroup;
 			children = (
+				497F982C158680E700189636 /* Components */,
 				497F982015818E4500189636 /* File */,
 				497F98171580783E00189636 /* Window */,
 				497F98091580752800189636 /* AppDelegate.h */,
@@ -145,6 +155,8 @@
 			children = (
 				497F98141580783900189636 /* AWindowController.h */,
 				497F98151580783900189636 /* AWindowController.m */,
+				497F98341586822700189636 /* ADragView.h */,
+				497F98351586822700189636 /* ADragView.m */,
 			);
 			name = Window;
 			sourceTree = "<group>";
@@ -165,6 +177,17 @@
 				497F982515847BC100189636 /* AFormatter.m */,
 			);
 			name = Formatter;
+			sourceTree = "<group>";
+		};
+		497F982C158680E700189636 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				497F982E1586813100189636 /* AController.h */,
+				497F982F1586813100189636 /* AController.m */,
+				497F98311586816A00189636 /* AView.h */,
+				497F98321586816A00189636 /* AView.m */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +260,9 @@
 				497F98161580783900189636 /* AWindowController.m in Sources */,
 				497F982315818FB700189636 /* AFile.m in Sources */,
 				497F982615847BC200189636 /* AFormatter.m in Sources */,
+				497F98301586813100189636 /* AController.m in Sources */,
+				497F98331586816A00189636 /* AView.m in Sources */,
+				497F98361586822800189636 /* ADragView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +390,7 @@
 				497F98131580752900189636 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
