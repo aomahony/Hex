@@ -10,10 +10,11 @@
 
 @implementation AppDelegate
 
-@synthesize window = _window;
+@synthesize window;
 
 - (void)dealloc
 {
+    self.window = nil;
     [super dealloc];
 }
 	

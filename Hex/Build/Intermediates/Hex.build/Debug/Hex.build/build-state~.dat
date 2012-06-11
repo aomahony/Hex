@@ -1,0 +1,210 @@
+THex
+v4
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Info.plist Hex/Hex-Info.plist
+cProcessPCH /Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-dvaduxehfiznercqaureqqkdrzbh/Hex-Prefix.pch.pth Hex/Hex-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AppDelegate.o /Users/andrew/dev/Hex/Hex/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/main.o /Users/andrew/dev/Hex/Hex/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AWindowController.o /Users/andrew/dev/Hex/Hex/Window/AWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004EE0217500000000000000EE
+t1323311477
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004E2F297C0000000000003430
+t1311713660
+s13360
+
+N/Users/andrew/dev/Hex/Hex/AppDelegate.m
+c000000004FD043EE0000000000000196
+t1339048942
+s406
+
+N/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AWindowController.o
+t2
+s0
+
+N/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AppDelegate.o
+t2
+s0
+
+N/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/Hex.LinkFileList
+c000000004FD045AC0000000000000143
+t1339049388
+s323
+
+N/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-dvaduxehfiznercqaureqqkdrzbh/Hex-Prefix.pch.pth
+t2
+s0
+
+N/Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app
+t2
+s0
+
+N/Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Info.plist
+t2
+s0
+
+N/Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/MacOS/Hex
+t2
+s0
+
+N/Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Resources/en.lproj/Credits.rtf
+t2
+s0
+
+N/Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Resources/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Resources/en.lproj/MainMenu.nib
+t2
+s0
+
+N/Users/andrew/dev/Hex/Hex/Hex-Prefix.pch
+c000000004FD03DA80000000000000089
+t1339047336
+s137
+
+N/Users/andrew/dev/Hex/Hex/Window/AWindowController.m
+c000000004FD045A40000000000000294
+t1339049380
+s660
+
+N/Users/andrew/dev/Hex/Hex/en.lproj/Credits.rtf
+c000000004FD03DA800000000000001B4
+t1339047336
+s436
+
+N/Users/andrew/dev/Hex/Hex/en.lproj/InfoPlist.strings
+c000000004FD03DA8000000000000002D
+t1339047336
+s45
+
+N/Users/andrew/dev/Hex/Hex/en.lproj/MainMenu.xib
+c000000004FD0450D000000000002899C
+t1339049229
+s166300
+
+N/Users/andrew/dev/Hex/Hex/main.m
+c000000004FD03DA800000000000000F2
+t1339047336
+s242
+
+NHex/Hex-Info.plist
+c000000004FD03DA8000000000000044A
+t1339047336
+s1098
+
+CBuild AST from /Users/andrew/dev/Hex/Hex/AppDelegate.m
+r0
+
+CBuild AST from /Users/andrew/dev/Hex/Hex/Window/AWindowController.m
+r0
+
+CBuild AST from /Users/andrew/dev/Hex/Hex/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies38c0502c7d80b541^670c972c7d80b541^---0#1#0#--18"Check dependencies36"1BB9D748-7F4F-43CE-8F1A-DA492A9E57CB-
+
+CCompileC Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AWindowController.o /Users/andrew/dev/Hex/Hex/Window/AWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s360742198.903187
+e360742199.202419
+r0
+xCompileC
+xHex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AWindowController.o
+x/Users/andrew/dev/Hex/Hex/Window/AWindowController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/andrew/dev/Hex/Hex/Window/AWindowController.m:24:26: error: expected ';' after expression [1]
+o     self.gotoAddressField
+o                          ^
+o                          ;
+ofix-it:"/Users/andrew/dev/Hex/Hex/Window/AWindowController.m":{24:26-24:26}:";"
+o/Users/andrew/dev/Hex/Hex/Window/AWindowController.m:27:32:{28:5-28:29}: warning: incompatible pointer types assigning to 'NSTextField *' from 'NSScrollView *' [-Wincompatible-pointer-types,3]
+o     self.gotoAddressFieldLabel =
+o                                ^
+o1 warning and 1 error generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/andrew/dev/Hex/Hex/Window/AWindowController.m815be7367d80b541^da8c33377d80b541^-558"/Users/andrew/dev/Hex/Hex/Window/AWindowController.m:24:26: error: expected ';' after expression [1]     self.gotoAddressField                          ^                          ;fix-it:"/Users/andrew/dev/Hex/Hex/Window/AWindowController.m":{24:26-24:26}:";"/Users/andrew/dev/Hex/Hex/Window/AWindowController.m:27:32:{28:5-28:29}: warning: incompatible pointer types assigning to 'NSTextField *' from 'NSScrollView *' [-Wincompatible-pointer-types,3]     self.gotoAddressFieldLabel =                                ^1 warning and 1 error generated.2(21%IDEActivityLogMessage2@29"Expected ';' after expression-360742199#0#101#1(26%IDEActivityLogFixItMessage3@22"Fix-It: replace with ;-360742199#184#80#-0#23"com.apple.dt.IDE.fix-it23%DVTTextDocumentLocation4@68"file://localhost/Users/andrew/dev/Hex/Hex/Window/AWindowController.m0000000000000000^23#25#23#25#18446744073709551615#0#---1";2#-4@68"file://localhost/Users/andrew/dev/Hex/Hex/Window/AWindowController.m0000000000000000^23#25#23#25#18446744073709551615#0#11"Parse Issue--2@77"Incompatible pointer types assigning to 'NSTextField *' from 'NSScrollView *'-360742199#264#193#-1#-4@68"file://localhost/Users/andrew/dev/Hex/Hex/Window/AWindowController.m0000000000000000^26#31#26#31#18446744073709551615#0#14"Semantic Issue1(4@68"file://localhost/Users/andrew/dev/Hex/Hex/Window/AWindowController.m0000000000000000^27#4#27#28#18446744073709551615#0#-0#0#0#-19%DVTDocumentLocation5@68"file://localhost/Users/andrew/dev/Hex/Hex/Window/AWindowController.m0000000000000000^2034"CompileC Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AWindowController.o Hex/Window/AWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrew/dev/Hex    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-generated-files.hmap -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-own-target-headers.hmap -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-all-target-headers.hmap -iquote /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-project-headers.hmap -I/Users/andrew/dev/Hex/Hex/Build/Products/Debug/include -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/DerivedSources/x86_64 -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/DerivedSources -F/Users/andrew/dev/Hex/Hex/Build/Products/Debug -include /Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-dvaduxehfiznercqaureqqkdrzbh/Hex-Prefix.pch -MMD -MT dependencies -MF /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AWindowController.d -c /Users/andrew/dev/Hex/Hex/Window/AWindowController.m -o /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AWindowController.o36"10B74446-A009-458F-82FF-CCB4FCA1E80B-
+
+CCompileC Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AppDelegate.o /Users/andrew/dev/Hex/Hex/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s360742197.953934
+e360742198.901962
+r1
+xCompileC
+xHex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AppDelegate.o
+x/Users/andrew/dev/Hex/Hex/AppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Compile /Users/andrew/dev/Hex/Hex/AppDelegate.m1e52f4357d80b541^08e8e6367d80b541^---0#0#0#-19%DVTDocumentLocation2@55"file://localhost/Users/andrew/dev/Hex/Hex/AppDelegate.m0000000000000000^1990"CompileC Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AppDelegate.o Hex/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrew/dev/Hex    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-generated-files.hmap -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-own-target-headers.hmap -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-all-target-headers.hmap -iquote /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-project-headers.hmap -I/Users/andrew/dev/Hex/Hex/Build/Products/Debug/include -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/DerivedSources/x86_64 -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/DerivedSources -F/Users/andrew/dev/Hex/Hex/Build/Products/Debug -include /Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-dvaduxehfiznercqaureqqkdrzbh/Hex-Prefix.pch -MMD -MT dependencies -MF /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AppDelegate.d -c /Users/andrew/dev/Hex/Hex/AppDelegate.m -o /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AppDelegate.o36"05DB40F8-133C-4AF4-8FAD-7BC77B554305-
+
+CCompileC Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/main.o /Users/andrew/dev/Hex/Hex/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s360742197.953974
+e360742198.898234
+r1
+xCompileC
+xHex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/main.o
+x/Users/andrew/dev/Hex/Hex/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Compile /Users/andrew/dev/Hex/Hex/main.m0d52f4357d80b541^a4ffe5367d80b541^---0#0#0#-19%DVTDocumentLocation2@48"file://localhost/Users/andrew/dev/Hex/Hex/main.m0000000000000000^1955"CompileC Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/main.o Hex/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrew/dev/Hex    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-generated-files.hmap -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-own-target-headers.hmap -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-all-target-headers.hmap -iquote /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-project-headers.hmap -I/Users/andrew/dev/Hex/Hex/Build/Products/Debug/include -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/DerivedSources/x86_64 -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/DerivedSources -F/Users/andrew/dev/Hex/Hex/Build/Products/Debug -include /Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-dvaduxehfiznercqaureqqkdrzbh/Hex-Prefix.pch -MMD -MT dependencies -MF /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/main.d -c /Users/andrew/dev/Hex/Hex/main.m -o /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/main.o36"0A7B2074-808B-4DDF-98BA-C7FF65E736D0-
+
+CCompileXIB /Users/andrew/dev/Hex/Hex/en.lproj/MainMenu.xib
+r0
+
+CCopyStringsFile /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Resources/en.lproj/InfoPlist.strings Hex/en.lproj/InfoPlist.strings
+r0
+
+CCpResource Hex/en.lproj/Credits.rtf Hex/Build/Products/Debug/Hex.app/Contents/Resources/en.lproj/Credits.rtf
+r0
+
+CLd /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/MacOS/Hex normal x86_64
+r0
+
+CProcessInfoPlistFile /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Info.plist Hex/Hex-Info.plist
+s360742188.738959
+e360742188.866792
+r1
+xProcessInfoPlistFile
+x/Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Info.plist
+xHex/Hex-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection26"Process Hex/Hex-Info.pliste109d12c7d80b541^35d1d72c7d80b541^---0#0#0#-19%DVTDocumentLocation2@56"file://localhost/Users/andrew/dev/Hex/Hex/Hex-Info.plist0000000000000000^370"ProcessInfoPlistFile Hex/Build/Products/Debug/Hex.app/Contents/Info.plist Hex/Hex-Info.plist    cd /Users/andrew/dev/Hex    builtin-infoPlistUtility Hex/Hex-Info.plist -genpkginfo /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Info.plist36"DF430824-4F20-4342-B59A-38695BF24631-
+
+CProcessPCH /Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-dvaduxehfiznercqaureqqkdrzbh/Hex-Prefix.pch.pth Hex/Hex-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s360742188.869725
+e360742197.952084
+r1
+xProcessPCH
+x/Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-dvaduxehfiznercqaureqqkdrzbh/Hex-Prefix.pch.pth
+xHex/Hex-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection29"Precompile Hex/Hex-Prefix.pch575ce42c7d80b541^6fbcf3357d80b541^---0#0#0#-19%DVTDocumentLocation2@56"file://localhost/Users/andrew/dev/Hex/Hex/Hex-Prefix.pch0000000000000000^1890"ProcessPCH Hex/Build/PrecompiledHeaders/Hex-Prefix-dvaduxehfiznercqaureqqkdrzbh/Hex-Prefix.pch.pth Hex/Hex-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrew/dev/Hex    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-generated-files.hmap -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-own-target-headers.hmap -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-all-target-headers.hmap -iquote /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Hex-project-headers.hmap -I/Users/andrew/dev/Hex/Hex/Build/Products/Debug/include -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/DerivedSources/x86_64 -I/Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/DerivedSources -F/Users/andrew/dev/Hex/Hex/Build/Products/Debug -c /Users/andrew/dev/Hex/Hex/Hex-Prefix.pch -o /Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-dvaduxehfiznercqaureqqkdrzbh/Hex-Prefix.pch.pth -MMD -MT dependencies -MF /Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-dvaduxehfiznercqaureqqkdrzbh/Hex-Prefix.pch.d36"12DA506F-F28C-4011-8C42-7232FC2246A6-
+
+CProcessPCH /Users/andrew/dev/Hex/Hex/Index/PrecompiledHeaders/Hex-Prefix-fdqrehxnviwgmgadoxyibcxxmdjj_ast/Hex-Prefix.pch.pth Hex/Hex-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app
+r0
+

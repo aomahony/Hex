@@ -13,7 +13,27 @@
 		497F98081580752800189636 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 497F98061580752800189636 /* Credits.rtf */; };
 		497F980B1580752900189636 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F980A1580752900189636 /* AppDelegate.m */; };
 		497F980E1580752900189636 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497F980C1580752900189636 /* MainMenu.xib */; };
+		497F98161580783900189636 /* AWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F98151580783900189636 /* AWindowController.m */; };
+		497F981A1580837900189636 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497F98181580837700189636 /* Quartz.framework */; };
+		497F981B1580837900189636 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497F98191580837700189636 /* QuartzCore.framework */; };
+		497F981D158096A000189636 /* RegexKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497F981C158096A000189636 /* RegexKit.framework */; };
+		497F981F158097A500189636 /* RegexKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497F981C158096A000189636 /* RegexKit.framework */; };
+		497F982315818FB700189636 /* AFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F982215818FB700189636 /* AFile.m */; };
+		497F982615847BC200189636 /* AFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F982515847BC100189636 /* AFormatter.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		497F981E1580975400189636 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				497F981F158097A500189636 /* RegexKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		497F97F31580752800189636 /* Hex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,14 +41,23 @@
 		497F97FA1580752800189636 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		497F97FB1580752800189636 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		497F97FC1580752800189636 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		497F97FF1580752800189636 /* Hex-Info.plist */ = {isa = PBXFileReference; path = "Hex-Info.plist"; sourceTree = "<group>"; };
+		497F97FF1580752800189636 /* Hex-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hex-Info.plist"; sourceTree = "<group>"; };
 		497F98011580752800189636 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		497F98031580752800189636 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		497F98051580752800189636 /* Hex-Prefix.pch */ = {isa = PBXFileReference; path = "Hex-Prefix.pch"; sourceTree = "<group>"; };
+		497F98051580752800189636 /* Hex-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hex-Prefix.pch"; sourceTree = "<group>"; };
 		497F98071580752800189636 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		497F98091580752800189636 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		497F98091580752800189636 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		497F980A1580752900189636 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		497F980D1580752900189636 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		497F98141580783900189636 /* AWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWindowController.h; path = Window/AWindowController.h; sourceTree = "<group>"; };
+		497F98151580783900189636 /* AWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWindowController.m; path = Window/AWindowController.m; sourceTree = "<group>"; };
+		497F98181580837700189636 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		497F98191580837700189636 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		497F981C158096A000189636 /* RegexKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RegexKit.framework; path = Local/Frameworks/RegexKit.framework; sourceTree = DEVELOPER_DIR; };
+		497F982115818FB700189636 /* AFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFile.h; path = File/AFile.h; sourceTree = "<group>"; };
+		497F982215818FB700189636 /* AFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFile.m; path = File/AFile.m; sourceTree = "<group>"; };
+		497F982415847BC100189636 /* AFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFormatter.h; path = Formatter/AFormatter.h; sourceTree = "<group>"; };
+		497F982515847BC100189636 /* AFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFormatter.m; path = Formatter/AFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +66,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				497F97F81580752800189636 /* Cocoa.framework in Frameworks */,
+				497F981A1580837900189636 /* Quartz.framework in Frameworks */,
+				497F981B1580837900189636 /* QuartzCore.framework in Frameworks */,
+				497F981D158096A000189636 /* RegexKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +104,9 @@
 		497F97F91580752800189636 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				497F981C158096A000189636 /* RegexKit.framework */,
+				497F98181580837700189636 /* Quartz.framework */,
+				497F98191580837700189636 /* QuartzCore.framework */,
 				497F97FA1580752800189636 /* AppKit.framework */,
 				497F97FB1580752800189636 /* CoreData.framework */,
 				497F97FC1580752800189636 /* Foundation.framework */,
@@ -82,10 +117,13 @@
 		497F97FD1580752800189636 /* Hex */ = {
 			isa = PBXGroup;
 			children = (
+				497F982015818E4500189636 /* File */,
+				497F98171580783E00189636 /* Window */,
 				497F98091580752800189636 /* AppDelegate.h */,
 				497F980A1580752900189636 /* AppDelegate.m */,
 				497F980C1580752900189636 /* MainMenu.xib */,
 				497F97FE1580752800189636 /* Supporting Files */,
+				497F982715847BD300189636 /* Formatter */,
 			);
 			path = Hex;
 			sourceTree = "<group>";
@@ -102,6 +140,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		497F98171580783E00189636 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				497F98141580783900189636 /* AWindowController.h */,
+				497F98151580783900189636 /* AWindowController.m */,
+			);
+			name = Window;
+			sourceTree = "<group>";
+		};
+		497F982015818E4500189636 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				497F982115818FB700189636 /* AFile.h */,
+				497F982215818FB700189636 /* AFile.m */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
+		497F982715847BD300189636 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				497F982415847BC100189636 /* AFormatter.h */,
+				497F982515847BC100189636 /* AFormatter.m */,
+			);
+			name = Formatter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +177,7 @@
 				497F97EF1580752800189636 /* Sources */,
 				497F97F01580752800189636 /* Frameworks */,
 				497F97F11580752800189636 /* Resources */,
+				497F981E1580975400189636 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -168,6 +234,9 @@
 			files = (
 				497F98041580752800189636 /* main.m in Sources */,
 				497F980B1580752900189636 /* AppDelegate.m in Sources */,
+				497F98161580783900189636 /* AWindowController.m in Sources */,
+				497F982315818FB700189636 /* AFile.m in Sources */,
+				497F982615847BC200189636 /* AFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +318,10 @@
 		497F98121580752900189636 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Local/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hex/Hex-Prefix.pch";
 				INFOPLIST_FILE = "Hex/Hex-Info.plist";
@@ -260,6 +333,10 @@
 		497F98131580752900189636 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Local/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hex/Hex-Prefix.pch";
 				INFOPLIST_FILE = "Hex/Hex-Info.plist";

@@ -1,0 +1,17 @@
+ffffffffffffffffffffffffffffffff 122ba33df162eff82871833dd79394b8 ffffffffffffffffffffffffffffffff 102 /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app
+000000004fd05eec00000000000000cc bb294511317703371b787788935c13e4 ffffffffffffffffffffffffffffffff 204 /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Frameworks/RegexKit.framework
+000000004fd63c9c000000000002a5ec 16dcc4f08da13b2f782dfaf9c484cc06 ffffffffffffffffffffffffffffffff 40609 /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Resources/en.lproj/MainMenu.nib
+00000000000000000000000000000000 7fa715a570a61eccb0e1a06c670a0bf7 ffffffffffffffffffffffffffffffff 436 /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Resources/en.lproj/Credits.rtf
+000000004fd03da8000000000000002d c1137289e8e3b7372971d162c5699948 ffffffffffffffffffffffffffffffff 92 /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Resources/en.lproj/InfoPlist.strings
+ffffffffffffffffffffffffffffffff c173866b38cea79c7b94d00cb3e28468 ffffffffffffffffffffffffffffffff 43932 /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/MacOS/Hex
+bd6be68b8866c217bcba46e4be203938 343fcbdd808320c4de864289774ef2f9 ffffffffffffffffffffffffffffffff 22684 /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AFormatter.o
+bd6be68b8864b02bbcba46e4be203c52 a485fef316fe78b32fb0d0812c090d07 ffffffffffffffffffffffffffffffff 7704 /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AFile.o
+bd6be68b8864bd80bcba46e4be203de3 ffbe6fb110cc60a4af8259f9ff722da9 ffffffffffffffffffffffffffffffff 48508 /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AWindowController.o
+ffffffffffffffffffffffffffffffff 505da4812c838389da76a99c591ab6bb ffffffffffffffffffffffffffffffff 19292 /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/AppDelegate.o
+ffffffffffffffffffffffffffffffff c20eaee0d1d81c479508ea93551d19ab ffffffffffffffffffffffffffffffff 2144 /Users/andrew/dev/Hex/Hex/Build/Intermediates/Hex.build/Debug/Hex.build/Objects-normal/x86_64/main.o
+000000004fd05f9000000000000000c0 bd6be68bc7b7ea8fbcba46e4be203a5d ffffffffffffffffffffffffffffffff 10518196 /Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-errtjpsdvjfmykglccfjrftrotsa/Hex-Prefix.pch.pth
+00000000000000000000000000000000 175f2360a6fac3fb8ae83fffd9607857 ffffffffffffffffffffffffffffffff 8 /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/PkgInfo
+00000000000000000000000000000000 175f2360a6fac3fb8ae83fffd9607857 ffffffffffffffffffffffffffffffff 1397 /Users/andrew/dev/Hex/Hex/Build/Products/Debug/Hex.app/Contents/Info.plist
+000000004fd05f9000000000000000c0 12cf195ae8613199d8d5c49a67ab8eb1 ffffffffffffffffffffffffffffffff 10518196 /Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-ezubzddhxhenbsgzbluvtgvzwaha/Hex-Prefix.pch.pth
+ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 0 /Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-ajhacfpkcolhsvfeixdabttymlmr/Hex-Prefix.pch.pth
+000000004fd03da80000000000000089 9238818878dae60c4b6418295a6b4985 ffffffffffffffffffffffffffffffff 10328496 /Users/andrew/dev/Hex/Hex/Build/PrecompiledHeaders/Hex-Prefix-dvaduxehfiznercqaureqqkdrzbh/Hex-Prefix.pch.pth

@@ -1,0 +1,33 @@
+Contents of /Users/andrew/dev/Hex/Hex/Hex-Prefix.pch
+3.0 (tags/Apple/clang-211.10.1) (based on LLVM 3.0svn)
+x86_64-apple-darwin10.8.0
+-x
+objective-c
+-arch
+x86_64
+-fmessage-length=0
+-fdiagnostics-print-source-range-info
+-fdiagnostics-show-category=id
+-fdiagnostics-parseable-fixits
+-std=gnu99
+-fpascal-strings
+-O0
+-DDEBUG=1
+-isysroot
+/Developer/SDKs/MacOSX10.6.sdk
+-fasm-blocks
+-mmacosx-version-min=10.6
+-gdwarf-2
+-DIBOutlet=__attribute__((iboutlet))
+-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))
+-DIBAction=void)__attribute__((ibaction)
+-iquote
+-iquote
+-I/Users/andrew/dev/Hex/Hex/Build/Products/Debug/include
+-F/Users/andrew/dev/Hex/Hex/Build/Products/Debug
+-F/Developer/Local/Frameworks
+-ferror-limit=10
+-working-directory=/Users/andrew/dev/Hex
+-Xclang
+-detailed-preprocessing-record
+SDK_PRODUCT_BUILD_VERSION=10K549
