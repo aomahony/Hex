@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "AController.h"
 #import "AFile.h"
-#import "AFormatter.h"
+#import "AHexView.h"
+#import "ASearcher.h"
 #import "ADragView.h"
 
-@interface AWindowController : AController
+@interface AWindowController : AController <NSTextFieldDelegate>
 {
     IBOutlet NSTextField* byteSearchField;
     IBOutlet NSTextField* textSearchField;
@@ -23,16 +24,20 @@
     IBOutlet NSTextField* gotoAddressFieldLabel;
     
     IBOutlet NSPopUpButton* displaySizePopupButton;
-    IBOutlet NSTextField* displaySizeLabel;
+    
+    IBOutlet NSPopUpButton* searchByteTypePopupButton;
+    
+    IBOutlet NSTextField* searchResultsLabel;
+    IBOutlet NSPopUpButton* searchResultsPopupButton;
     
     IBOutlet ADragView* dragView;
     
     IBOutlet NSScrollView* hexScrollView;
     
-    NSTextView* hexDumpView;
+    AHexView* hexDumpView;
     
     AFile* currentFile;
-    AFormatter* currentFormatter;
+    ASearcher* currentSearcher;
 }
 
 @property (nonatomic, retain) IBOutlet NSTextField* byteSearchField;
@@ -43,10 +48,14 @@
 @property (nonatomic, retain) IBOutlet NSTextField* textSearchFieldLabel;
 @property (nonatomic, retain) IBOutlet NSTextField* gotoAddressFieldLabel;
 
+@property (nonatomic, retain) IBOutlet NSTextField* searchResultsLabel;
+@property (nonatomic, retain) IBOutlet NSPopUpButton* searchResultsPopupButton;
+
 @property (nonatomic, retain) IBOutlet NSScrollView* hexScrollView;
 @property (nonatomic, retain) IBOutlet ADragView* dragView;
 
 @property (nonatomic, retain) IBOutlet NSPopUpButton* displaySizePopupButton;
-@property (nonatomic, retain) IBOutlet NSTextField* displaySizeLabel;
+
+@property (nonatomic, retain) IBOutlet NSPopUpButton* searchByteTypePopupButton;
 
 @end

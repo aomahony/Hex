@@ -24,7 +24,7 @@
         filename = [f retain];
         
         [data release];
-        data = [[NSData alloc] initWithContentsOfFile:f];
+        data = (f != nil) ? [[NSData alloc] initWithContentsOfFile:f] : nil;
     }
 }
 

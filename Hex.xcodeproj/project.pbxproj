@@ -16,13 +16,14 @@
 		497F98161580783900189636 /* AWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F98151580783900189636 /* AWindowController.m */; };
 		497F981A1580837900189636 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497F98181580837700189636 /* Quartz.framework */; };
 		497F981B1580837900189636 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497F98191580837700189636 /* QuartzCore.framework */; };
-		497F981D158096A000189636 /* RegexKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497F981C158096A000189636 /* RegexKit.framework */; };
-		497F981F158097A500189636 /* RegexKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497F981C158096A000189636 /* RegexKit.framework */; };
 		497F982315818FB700189636 /* AFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F982215818FB700189636 /* AFile.m */; };
 		497F982615847BC200189636 /* AFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F982515847BC100189636 /* AFormatter.m */; };
 		497F98301586813100189636 /* AController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F982F1586813100189636 /* AController.m */; };
 		497F98331586816A00189636 /* AView.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F98321586816A00189636 /* AView.m */; };
 		497F98361586822800189636 /* ADragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F98351586822700189636 /* ADragView.m */; };
+		497F983A158BA04B00189636 /* ASearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F9839158BA04B00189636 /* ASearcher.m */; };
+		49AA66AD159408E4007F44AF /* AHexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AA66AC159408E4007F44AF /* AHexView.m */; };
+		49D6B23B158FA7D6001C778C /* RegexKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D6B23A158FA7D6001C778C /* RegexKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				497F981F158097A500189636 /* RegexKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,6 @@
 		497F98151580783900189636 /* AWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWindowController.m; path = Window/AWindowController.m; sourceTree = "<group>"; };
 		497F98181580837700189636 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		497F98191580837700189636 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		497F981C158096A000189636 /* RegexKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RegexKit.framework; path = Local/Frameworks/RegexKit.framework; sourceTree = DEVELOPER_DIR; };
 		497F982115818FB700189636 /* AFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFile.h; path = File/AFile.h; sourceTree = "<group>"; };
 		497F982215818FB700189636 /* AFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFile.m; path = File/AFile.m; sourceTree = "<group>"; };
 		497F982415847BC100189636 /* AFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFormatter.h; path = Formatter/AFormatter.h; sourceTree = "<group>"; };
@@ -67,6 +66,11 @@
 		497F98321586816A00189636 /* AView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AView.m; path = Components/AView.m; sourceTree = "<group>"; };
 		497F98341586822700189636 /* ADragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADragView.h; path = Window/ADragView.h; sourceTree = "<group>"; };
 		497F98351586822700189636 /* ADragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADragView.m; path = Window/ADragView.m; sourceTree = "<group>"; };
+		497F9838158BA04B00189636 /* ASearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASearcher.h; path = Searcher/ASearcher.h; sourceTree = "<group>"; };
+		497F9839158BA04B00189636 /* ASearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASearcher.m; path = Searcher/ASearcher.m; sourceTree = "<group>"; };
+		49AA66AB159408E4007F44AF /* AHexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHexView.h; sourceTree = "<group>"; };
+		49AA66AC159408E4007F44AF /* AHexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHexView.m; sourceTree = "<group>"; };
+		49D6B23A158FA7D6001C778C /* RegexKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RegexKit.framework; path = ../../../../Developer/Local/Frameworks/RegexKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +81,7 @@
 				497F97F81580752800189636 /* Cocoa.framework in Frameworks */,
 				497F981A1580837900189636 /* Quartz.framework in Frameworks */,
 				497F981B1580837900189636 /* QuartzCore.framework in Frameworks */,
-				497F981D158096A000189636 /* RegexKit.framework in Frameworks */,
+				49D6B23B158FA7D6001C778C /* RegexKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +108,7 @@
 		497F97F61580752800189636 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49D6B23A158FA7D6001C778C /* RegexKit.framework */,
 				497F97F71580752800189636 /* Cocoa.framework */,
 				497F97F91580752800189636 /* Other Frameworks */,
 			);
@@ -113,7 +118,6 @@
 		497F97F91580752800189636 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				497F981C158096A000189636 /* RegexKit.framework */,
 				497F98181580837700189636 /* Quartz.framework */,
 				497F98191580837700189636 /* QuartzCore.framework */,
 				497F97FA1580752800189636 /* AppKit.framework */,
@@ -126,6 +130,7 @@
 		497F97FD1580752800189636 /* Hex */ = {
 			isa = PBXGroup;
 			children = (
+				497F9837158BA02400189636 /* Searcher */,
 				497F982C158680E700189636 /* Components */,
 				497F982015818E4500189636 /* File */,
 				497F98171580783E00189636 /* Window */,
@@ -157,6 +162,8 @@
 				497F98151580783900189636 /* AWindowController.m */,
 				497F98341586822700189636 /* ADragView.h */,
 				497F98351586822700189636 /* ADragView.m */,
+				49AA66AB159408E4007F44AF /* AHexView.h */,
+				49AA66AC159408E4007F44AF /* AHexView.m */,
 			);
 			name = Window;
 			sourceTree = "<group>";
@@ -190,6 +197,15 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
+		497F9837158BA02400189636 /* Searcher */ = {
+			isa = PBXGroup;
+			children = (
+				497F9838158BA04B00189636 /* ASearcher.h */,
+				497F9839158BA04B00189636 /* ASearcher.m */,
+			);
+			name = Searcher;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,7 +233,7 @@
 		497F97EA1580752800189636 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = Myself;
 			};
 			buildConfigurationList = 497F97ED1580752800189636 /* Build configuration list for PBXProject "Hex" */;
@@ -263,6 +279,8 @@
 				497F98301586813100189636 /* AController.m in Sources */,
 				497F98331586816A00189636 /* AView.m in Sources */,
 				497F98361586822800189636 /* ADragView.m in Sources */,
+				497F983A158BA04B00189636 /* ASearcher.m in Sources */,
+				49AA66AD159408E4007F44AF /* AHexView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +364,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(DEVELOPER_DIR)/Local/Frameworks\"",
+					/Developer/Local/Frameworks,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hex/Hex-Prefix.pch";
@@ -361,7 +379,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(DEVELOPER_DIR)/Local/Frameworks\"",
+					/Developer/Local/Frameworks,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hex/Hex-Prefix.pch";

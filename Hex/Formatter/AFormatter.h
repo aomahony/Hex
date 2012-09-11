@@ -26,23 +26,52 @@ typedef enum
     
 }formatterSearchMode;
 
+typedef enum
+{
+    FORMATTER_SELECTION_MODE_NULL = 0,
+    FORMATTER_SELECTION_MODE_BINARY,
+    FORMATTER_SELECTION_MODE_TEXT
+    
+}formatterSelectionMode;
+
 @interface AFormatter : NSObject
 {
     formatterDisplaySize currentDisplaySize;
     NSData* data;
     
+    NSInteger numberOfCharactersPerLine;
     NSInteger stride;
+    
+    NSInteger addressStringLength; //Includes the trailing space
 }
 
 @property (nonatomic, assign) formatterDisplaySize currentDisplaySize;
 @property (nonatomic, retain) NSData* data;
 @property (readonly) NSString* formattedString;
+@property (readonly) NSInteger displaySize;
+
+@property (nonatomic, assign) NSInteger numberOfCharactersPerLine;
 
 @property (readonly) NSArray* displaySizeStrings;
 
-- (NSArray*)getFormattedRangesForSearchQuery:(NSString*)query
+- (NSArray*)getFormattedRangesOfAddressRange:(NSRange)range
                                   searchMode:(formatterSearchMode)searchMode;
 
-- (NSInteger)getFormattedAddressOffset:(NSString*)address;
+- (NSInteger)getFormattedOffsetOfAbsoluteAddress:(NSInteger)address
+                                    searchMode:(formatterSearchMode)searchMode;
+
+- (NSInteger)getAbsoluteAddressForFormattedOffset:(NSInteger)offset
+                                       searchMode:(formatterSearchMode)searchMode
+                                      roundToByte:(BOOL)r;
+
+- (NSInteger)getDisplaySizeForAddress:(NSInteger)address;
+
+- (NSInteger)getFormattedAddressLineOffset:(NSInteger)address;
+
+- (NSData*)formatDataBasedOnDisplay:(NSData*)data;
+
+- (BOOL)isSelectableCharacterIndex:(NSInteger)index;
+
+- (formatterSelectionMode)selectionModeForCharacterIndex:(NSInteger)index;
 
 @end

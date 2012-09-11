@@ -11,12 +11,12 @@
 
 @interface ADragView : AView
 {
-    SEL dropSelector;
+    id dropDelegate;
 }
 
-@property (nonatomic, assign) SEL dropSelector;
+@property (nonatomic, assign) id dropDelegate;
 
 - (void)setDropTypes:(NSArray*)dropTypes
-    withDropSelector:(SEL)ds;
+    withDropDelegate:(id)dd;
 
 @end

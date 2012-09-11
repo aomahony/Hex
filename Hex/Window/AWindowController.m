@@ -11,6 +11,7 @@
 @interface AWindowController ()
 
 @property (assign) NSString* currentFilename;
+@property (readonly) BOOL searchByDisplayOrder;
 
 @end
 
@@ -18,11 +19,26 @@
 
 @synthesize byteSearchField, textSearchField, gotoAddressField;
 @synthesize byteSearchFieldLabel, textSearchFieldLabel, gotoAddressFieldLabel;
+@synthesize searchByteTypePopupButton;
 @synthesize hexScrollView;
 @synthesize dragView;
 
+@synthesize searchResultsLabel;
+@synthesize searchResultsPopupButton;
+
 @synthesize displaySizePopupButton;
-@synthesize displaySizeLabel;
+
+static NSInteger kSearchAddressFieldTag = 1;
+static NSInteger kSearchByteFieldTag = 2;
+static NSInteger kSearchTextFieldTag = 3;
+
+static NSInteger searchByteTypeRaw = 0;
+static NSInteger searchByteTypeDisplay = 1;
+
+- (BOOL)searchByDisplayOrder
+{
+    return ([searchByteTypePopupButton indexOfSelectedItem] == searchByteTypeDisplay);
+}
 
 - (NSString*)currentFilename
 {
@@ -32,9 +48,11 @@
 - (void)setCurrentFilename:(NSString*)f
 {
     currentFile.filename = f;
-    currentFormatter.data = currentFile.data;
+    currentSearcher.data = currentFile.data;
     
-    hexDumpView.string = currentFormatter.formattedString;
+    hexDumpView.data = currentFile.data;
+    
+    [hexDumpView becomeFirstResponder];
 }
 
 - (IBAction)openDocument:(id)sender
@@ -59,14 +77,96 @@
 
 - (IBAction)displaySizeSelected:(id)sender
 {
-    currentFormatter.currentDisplaySize = (formatterDisplaySize)[(NSPopUpButton*)sender indexOfSelectedItem] + 1;
-    hexDumpView.string = currentFormatter.formattedString;
+    hexDumpView.currentDisplaySize = (formatterDisplaySize)[(NSPopUpButton*)sender indexOfSelectedItem] + 1;
+}
+
+- (void)selectSearchResult:(NSInteger)index
+              fromSelector:(BOOL)isFromSelector
+{
+    if (!isFromSelector)
+        [searchResultsPopupButton selectItemAtIndex:index];
+    else
+        [hexDumpView selectSelectedAddressIndex:index];
+}
+
+- (IBAction)searchResultSelected:(id)sender
+{
+    [self selectSearchResult:[(NSPopUpButton*)sender indexOfSelectedItem]
+                fromSelector:YES];
+}
+
+- (void)fillSearchResults:(NSInteger)tag
+{
+    [searchResultsPopupButton removeAllItems];
+    
+    if (tag == kSearchByteFieldTag)
+    {
+        searchResultsLabel.stringValue = [NSString stringWithFormat:@"Byte Search Results (%lu)", hexDumpView.currentAddressesSelected.count];
+    }
+    else if (tag == kSearchTextFieldTag)
+    {
+        searchResultsLabel.stringValue = [NSString stringWithFormat:@"Text Search Results (%lu)", hexDumpView.currentAddressesSelected.count];
+    }
+    [searchResultsLabel sizeToFit];
+    
+    [searchResultsPopupButton setFrame:CGRectMake (searchResultsLabel.frame.origin.x +
+                                                   searchResultsLabel.frame.size.width + 8,
+                                                   searchResultsPopupButton.frame.origin.y,
+                                                   searchResultsPopupButton.frame.size.width,
+                                                   searchResultsPopupButton.frame.size.height)];
+    
+    NSMutableArray* titleStrings = [NSMutableArray array];
+    for (NSValue* addr in hexDumpView.currentAddressesSelected)
+    {
+        [titleStrings addObject:[NSString stringWithFormat:@"0x%.8X", addr.rangeValue.location]];
+    }
+
+    [searchResultsPopupButton addItemsWithTitles:titleStrings];
+}
+
+//NSTextFieldDelegate
+
+- (void)controlTextDidChange:(NSNotification*)notification
+{
+    hexDumpView.currentAddressesSelected = nil;
+    
+    NSTextField* object = [notification object];
+    
+    if (object.tag == kSearchAddressFieldTag)
+    {
+        NSInteger address = [currentSearcher extractAddressFromSearchString:object.stringValue];
+        
+        if (address >= 0)
+            [hexDumpView gotoAddress:address];
+    }
+    else if (object.tag == kSearchByteFieldTag)
+    {
+        NSData* searchData = [ASearcher dataFromHexString:object.stringValue];
+
+        hexDumpView.currentAddressesSelected = [currentSearcher searchDataForData:(self.searchByDisplayOrder ? [hexDumpView formatDataBasedOnDisplay:searchData] : searchData)];
+        
+        [self fillSearchResults:object.tag];
+    }
+    else if (object.tag == kSearchTextFieldTag)
+    {
+        hexDumpView.currentAddressesSelected = [currentSearcher searchDataForData:[ASearcher dataFromTextString:object.stringValue]];
+        
+        [self fillSearchResults:object.tag];
+    }    
+}
+
+
+//End NSTextFieldDelegate
+
+- (void)fileDragDropped:(NSString*)path
+{
+    self.currentFilename = path;
 }
 
 - (void)awakeFromNib
 {
-    hexDumpView = [[NSTextView alloc] initWithFrame:NSMakeRect(0, 0,
-                                   hexScrollView.frame.size.width,hexScrollView.frame.size.height)];
+    hexDumpView = [[AHexView alloc] initWithFrame:NSMakeRect(0, 0,
+                                    hexScrollView.frame.size.width,hexScrollView.frame.size.height)];
     [hexDumpView setMinSize:NSMakeSize(0.0, hexScrollView.frame.size.height)];
     [hexDumpView setMaxSize:NSMakeSize(FLT_MAX, FLT_MAX)];
     [hexDumpView setVerticallyResizable:YES];
@@ -78,13 +178,9 @@
     hexDumpView.font = [NSFont fontWithName:@"Courier New"
                                        size:11.0];
     
-    [hexDumpView setSelectedTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[NSColor yellowColor], 
-                                            NSBackgroundColorAttributeName, nil]];
+    [hexDumpView setSelectedTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[NSColor yellowColor],NSBackgroundColorAttributeName, nil]];
     
-    //theTextView.selectable = false;
-    
-    //[theTextView setSelectedRanges:[NSArray arrayWithObjects:[NSValue valueWithRange:NSMakeRange(0, 10)],
-      //                              [NSValue valueWithRange:NSMakeRange (15, 4)], nil]];
+    hexDumpView.selectable = false;
     
     [[hexDumpView textContainer]
      setContainerSize:NSMakeSize(hexScrollView.frame.size.width, FLT_MAX)];
@@ -92,18 +188,19 @@
     
     [hexScrollView setDocumentView:hexDumpView];
     
-    /*NSString* extractedString = nil;
-    [@"You owe: 1234.56 (tip not included)" getCapturesWithRegexAndReferences:@"(\\d+\\.\\d+)",
-     @"$1", &extractedString,
-     nil];
-    
-    NSLog (@"%@", extractedString);*/
-    
     currentFile = [AFile new];
-    currentFormatter = [AFormatter new];
+    currentSearcher = [ASearcher new];
     
-    [displaySizePopupButton addItemsWithTitles:currentFormatter.displaySizeStrings];
-    [displaySizePopupButton selectItemAtIndex:currentFormatter.currentDisplaySize - 1];
+    [displaySizePopupButton addItemsWithTitles:hexDumpView.displaySizeStrings];
+    [displaySizePopupButton selectItemAtIndex:hexDumpView.currentDisplaySize - 1];
+        
+    [searchByteTypePopupButton addItemsWithTitles:[NSArray arrayWithObjects:@"Raw", @"Display", nil]];
+    [searchByteTypePopupButton selectItemAtIndex:searchByteTypeDisplay];
+
+    [dragView setDropTypes:[NSArray arrayWithObject:NSFilenamesPboardType]
+          withDropDelegate:self];
+    
+    [hexDumpView becomeFirstResponder];
 }
 
 - (void)dealloc
@@ -113,7 +210,11 @@
     self.gotoAddressField =
     self.byteSearchFieldLabel = 
     self.textSearchFieldLabel = 
-    self.displaySizeLabel = nil;
+    self.searchResultsLabel = nil;
+    
+    self.searchResultsPopupButton = nil;
+    
+    self.searchByteTypePopupButton = nil;
     
     self.gotoAddressFieldLabel = nil;
     self.hexScrollView = nil;
@@ -124,7 +225,7 @@
     [hexDumpView release];
     
     [currentFile release];
-    [currentFormatter release];
+    [currentSearcher release];
     
     [super dealloc];
 }
