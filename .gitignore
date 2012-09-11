@@ -1,4 +1,6 @@
 # Xcode
+Hex/Logs/*
+Hex/Build/*
 build/*
 *.pbxuser
 !default.pbxuser
